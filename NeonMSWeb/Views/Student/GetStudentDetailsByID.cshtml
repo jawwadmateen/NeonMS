@@ -1,0 +1,66 @@
+﻿@using NeonMSWeb.ViewModel
+@model StudentDetailsViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Student Details</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-3">
+        <h2>Student Details</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>User ID</th>
+                    <th>Status</th>
+                    <th>Semester</th>
+                    <th>Batch Year</th>
+                    <th>CGPA</th>
+                    <th>SGPA</th>
+                    <th>User Name</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Date of Birth</th>
+                    <th>Created DateTime</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip Code</th>
+                    <th>Department ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.StudentID</td>
+                    <td>@Model.UserID</td>
+                    <td>@Model.Status</td>
+                    <td>@Model.Semester</td>
+                    <td>@Model.BatchYear</td>
+                    <td>@Model.CGPA</td>
+                    <td>@Model.SGPA</td>
+                    <td>@Model.UserName</td>
+                    <td>@Model.FirstName</td>
+                    <td>@Model.LastName</td>
+                    <td>@Model.Email</td>
+                    <td>@Model.PhoneNumber</td>
+                    <td>@Model.DateOfBirth</td>
+                    <td>@Model.CreatedDateTime</td>
+                    <td>@Model.Address</td>
+                    <td>@Model.City</td>
+                    <td>@Model.State</td>
+                    <td>@Model.ZipCode</td>
+                    <td>@Model.DepartmentID</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
