@@ -6,7 +6,7 @@ namespace NeonMSWeb.Controllers
     {
         public IActionResult Login()
         {
-            return View();
+            return View(); //Hello World
         }
     }
 }
