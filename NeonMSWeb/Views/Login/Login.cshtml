@@ -131,7 +131,8 @@
                         <img src="/NeonMS_LogoLogin.jpg" alt="University Logo" class="img-fluid mb-3">
                         <h4>Login</h4>
                     </div>
-                    <div class="card-body">
+                    @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { @class = "card-body" }))
+                    {
                         <!-- Role Dropdown -->
                         <div class="form-group">
                             <label for="role">Select Role:</label>
@@ -155,18 +156,19 @@
                         </div>
 
                         <!-- Login Button -->
-                        <button type="button" class="btn btn-primary btn-block">Login</button>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    }
 
-                        <!-- Forget Password Link -->
-                        <div class="mt-2 text-center">
-                            <a href="#">Forgot Password?</a>
-                        </div>
-
-                        <!-- Sign Up Link -->
-                        <div class="mt-2 text-center">
-                            Don't have an account? <a href="#">Sign Up</a>
-                        </div>
+                    <!-- Forget Password Link -->
+                    <div class="mt-2 text-center">
+                        <a href="#">Forgot Password?</a>
                     </div>
+
+                    <!-- Sign Up Link -->
+                    <div class="mt-2 text-center">
+                        Don't have an account? <a href="#">Sign Up</a>
+                    </div>
+
                 </div>
             </div>
         </div>
